@@ -6,19 +6,31 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="main">
+	
+	<div class="main" ng-app="myList" ng-controller="myListController">
+			
 		<h1>Book List</h1>
 		<div class="addBook">
-			<input placeholder="Add Book" class="addText">
-			<button>Add</button>
+				
+			
+			<input ng-model = "newItem" placeholder="Add Book" class="addText">
+				<button ng-click = "pushItem()">ADD</button>
+				{{newItem}}
+				
+			<ul>
+				<li ng-repeat="i in items">
+					{{i}}
+					<span ng-click="deleteItem($index)">x</span>
+				</li>
+			
+			</ul>
+				
+			</div>
 		</div>
-		<ul>
-			<li>a</li>
-			<li>a</li>
-			<li>a</li>
-			<span>g</span>
-		</ul>
-	</div>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="script.js"></script>
 
 </body>
 </html>
