@@ -35,4 +35,19 @@
  	margin-right: 10px;
  }
  
+ 	.addBook {
+ 	position: relative;
+ 	padding-bottom: 0px;
+ 	height: 30px;
+ }
+ 
+ .addText {
+ 	width: 80%;
+ 	height: 30px;
+ }
+ 
+ .addBook button {
+ 	height: 35px;
+ 	width: 50px;
+ }
  
